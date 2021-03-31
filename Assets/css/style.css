@@ -1,0 +1,47 @@
+
+
+body{
+}
+
+table {
+    counter-reset: row-num;
+}
+
+table tbody tr{
+    counter-increment: row-num ;
+}
+
+table tr td:first-child::before {
+    content: counter(row-num);
+}
+
+
+.tableFixhead{
+	overflow-y: auto;
+	height: 500px;
+}
+
+.tableFixhead thead tr th{
+	position: sticky;
+	top: 0;
+	background: #00000;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td { 
+	padding: 8px 16px; 
+}
+th{ 
+	background:#343a40; 
+}
+
+#updateForm {
+	display: none;
+}
+
+
+
